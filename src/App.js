@@ -10,7 +10,8 @@ function App() {
         <Testimonio
         nombre='Shawn Wang'
         pais='Singapore'
-        imagen='shawn'
+        imagen='Shawn-bf42c7b909dae3111d18a21870ee6ca5'
+        //imagen='shawn'
         cargo='Software Engineer'
         empresa='Amazon'
         testimonio="It's scary to change careers. I only gained confidence that I could code by working through the hundreds of hours of free lessons on freeCodeCamp. Within a year I had a six-figure job as a Software Engineer. freeCodeCamp changed my life."
@@ -18,7 +19,8 @@ function App() {
          <Testimonio
         nombre='Sarah Chima'
         pais='Nigeria'
-        imagen='sarah'
+        imagen='Sarah-45de0e53b7b2520ebbac35c454b9748a'
+        //imagen='sarah'
         cargo='Software Engineer'
         empresa='ChatDesk'
         testimonio="freeCodeCamp was the gateway to my career as a software developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. It was everything I needed to land my first dev job at an amazing company."
@@ -26,7 +28,8 @@ function App() {
          <Testimonio
         nombre='Emma Bostian'
         pais='Sweden'
-        imagen='emma'
+        imagen='Emma-5a662db9bcf55809a1fefb2ea17634bc'
+        //imagen='emma'
         cargo='Software Engineer'
         empresa='Spotify'
         testimonio="I've always struggled with learning JavaScript. I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript as well as data structures and algorithms on freeCodeCamp gave me the skills and confidence I needed to land my dream job as a software engineer at Spotify."

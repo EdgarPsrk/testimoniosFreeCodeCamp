@@ -5,15 +5,25 @@ function Testimonio(props){
   return(
     <div className='contenedor-testimonio'>
       <img 
-      className='imagen-testimonio'
-      src={require(`../imagenes/testimonio-${props.imagen}.png`)}
-      // src={require('../imagenes/testimonio-emma.png')}
-      alt='Foto de Emma'
+        className='imagen-testimonio'
+        src={`https://www.freecodecamp.org/static/${props.imagen}.png`}
+        //src={require(`../imagenes/testimonio-${props.imagen}.png`)}
+        // podemos descargar la imagen y guardarla en el archivo pero github no deberia de trabajar con archivos binarios, puede, pero no se recomienda, 
+        // con lo que optamos con obtener la imagen directa de la red, pero la etiqueta src comentada seria como se obtuvo el recurso en este curso.  
+        alt={`Foto de ${props.nombre}`}
       />
       <div className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'>{props.nombre} in {props.pais}</p>
-        <p className='cargo-testimonio'>{props.cargo} at {props.empresa}</p>
-        <p className='texto-testimonio'>"{props.testimonio}"</p>
+
+        <p className='nombre-testimonio'>
+          <strong>{props.nombre}</strong> in {props.pais}
+        </p>
+        <p className='cargo-testimonio'>
+          {props.cargo} at <strong>{props.empresa}</strong>
+        </p>
+        <p className='texto-testimonio'>
+          "{props.testimonio}"
+        </p>
+
       </div>
     </div>
   )
