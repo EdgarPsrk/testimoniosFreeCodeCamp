@@ -1,19 +1,19 @@
 import React from "react";
 import '../stylesheets/Testimonios.css';
 
-function Testimonio(){
+function Testimonio(props){
   return(
     <div className='contenedor-testimonio'>
       <img 
       className='imagen-testimonio'
-      src='https://www.freecodecamp.org/static/Shawn-bf42c7b909dae3111d18a21870ee6ca5.png'
+      src={require(`../imagenes/testimonio-${props.imagen}.png`)}
       // src={require('../imagenes/testimonio-emma.png')}
       alt='Foto de Emma'
       />
       <div className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'> Shawn Wang in Singapore</p>
-        <p className='cargo-testimonio'>Software Engineer at Amazon</p>
-        <p className='texto-testimonio'>"It's scary to change careers. I only gained confidence that I could code by working through the hundreds of hours of free lessons on freeCodeCamp. Within a year I had a six-figure job as a Software Engineer. freeCodeCamp changed my life."</p>
+        <p className='nombre-testimonio'>{props.nombre} in {props.pais}</p>
+        <p className='cargo-testimonio'>{props.cargo} at {props.empresa}</p>
+        <p className='texto-testimonio'>"{props.testimonio}"</p>
       </div>
     </div>
   )
